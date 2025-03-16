@@ -26,11 +26,13 @@ function adicionarAmigo() {
     const input = document.getElementById('amigo');
     const nomeAmigo = input.value.trim();
 
-    if (nomeAmigo !== '') {
+    if (nomeAmigo !== '' && !amigos.includes(nomeAmigo)) {
         amigos.push(nomeAmigo);
         atualizarListaAmigos();
         input.value = '';
         input.focus();
+    } else if (amigos.includes(nomeAmigo)) {
+        alert('Este nome já foi adicionado.');
     }
 }
 
@@ -38,7 +40,7 @@ function atualizarListaAmigos() {
     const listaAmigos = document.getElementById('listaAmigos');
     listaAmigos.innerHTML = '';
 
-    amigos.forEach((amigo, index) => {
+    amigos.forEach((amigo) => {
         const li = document.createElement('li');
         li.textContent = amigo;
         li.className = 'name-item';
@@ -55,13 +57,21 @@ function sortearAmigo() {
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = '';
 
-    const amigosSorteados = [...amigos];
-    const sorteio = [];
+    let amigosSorteados;
+    let sorteio;
+    let valid = false;
 
-    while (amigosSorteados.length > 0) {
-        const indice = Math.floor(Math.random() * amigosSorteados.length);
-        const amigo = amigosSorteados.splice(indice, 1)[0];
-        sorteio.push(amigo);
+    while (!valid) {
+        amigosSorteados = [...amigos];
+        sorteio = [];
+
+        while (amigosSorteados.length > 0) {
+            const indice = Math.floor(Math.random() * amigosSorteados.length);
+            const amigo = amigosSorteados.splice(indice, 1)[0];
+            sorteio.push(amigo);
+        }
+
+        valid = sorteio.every((amigo, index) => amigo !== amigos[index]);
     }
 
     sorteio.forEach((amigo, index) => {
@@ -71,9 +81,3 @@ function sortearAmigo() {
         resultado.appendChild(li);
     });
 }
-
-
-
-
-
-

@@ -20,7 +20,57 @@
 // C deve presentear B
 // D deve presentear A
 
+let amigos = [];
 
+function adicionarAmigo() {
+    const input = document.getElementById('amigo');
+    const nomeAmigo = input.value.trim();
+
+    if (nomeAmigo !== '') {
+        amigos.push(nomeAmigo);
+        atualizarListaAmigos();
+        input.value = '';
+        input.focus();
+    }
+}
+
+function atualizarListaAmigos() {
+    const listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = '';
+
+    amigos.forEach((amigo, index) => {
+        const li = document.createElement('li');
+        li.textContent = amigo;
+        li.className = 'name-item';
+        listaAmigos.appendChild(li);
+    });
+}
+
+function sortearAmigo() {
+    if (amigos.length < 2) {
+        alert('Adicione pelo menos dois amigos para sortear.');
+        return;
+    }
+
+    const resultado = document.getElementById('resultado');
+    resultado.innerHTML = '';
+
+    const amigosSorteados = [...amigos];
+    const sorteio = [];
+
+    while (amigosSorteados.length > 0) {
+        const indice = Math.floor(Math.random() * amigosSorteados.length);
+        const amigo = amigosSorteados.splice(indice, 1)[0];
+        sorteio.push(amigo);
+    }
+
+    sorteio.forEach((amigo, index) => {
+        const li = document.createElement('li');
+        li.textContent = `${amigos[index]} tirou ${amigo}`;
+        li.className = 'result-item';
+        resultado.appendChild(li);
+    });
+}
 
 
 

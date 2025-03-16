@@ -7,8 +7,14 @@ O projeto "Amigo Secreto" é uma aplicação web que permite sortear amigos secr
 - Adicionar nomes à lista de participantes
 - Realizar o sorteio dos amigos secretos
 - Exibir o resultado do sorteio
+- Evita nomes iguais
+- Não é possível tirar a si mesmo
 
 ## Como Usar
+
+### Siga ou clique no link: https://venelouis.github.io/ORACLE-ONE-ALURA/3.%20Challenge%20Amigo%20Secreto/index.html
+
+### Ou use localmente:
 
 1. Clone o repositório para sua máquina local:
     ```sh
@@ -29,24 +35,16 @@ O projeto "Amigo Secreto" é uma aplicação web que permite sortear amigos secr
 ## Capturas de Tela
 
 ### Tela Inicial
-![Tela Inicial](assets/tela-inicial.png)
+![Tela Inicial](assets/1.png)
 
 ### Adicionando Participantes
-![Adicionando Participantes](assets/adicionando-participantes.png)
+![Adicionando Participantes](assets/2.png)
 
 ### Resultado do Sorteio
-![Resultado do Sorteio](assets/resultado-sorteio.png)
+![Resultado do Sorteio](assets/3.png)
 
 ## Tecnologias Utilizadas
 
 - HTML
 - CSS
 - JavaScript
-
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.

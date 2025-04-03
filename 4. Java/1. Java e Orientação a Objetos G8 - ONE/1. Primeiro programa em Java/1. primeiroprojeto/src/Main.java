@@ -3,6 +3,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.print("Concluí a aula 01 e agora estou mergulhando em Java!");
+        System.out.println("Catálogo de Filmes (Minha Netflix)");
+        System.out.println("Filme: Top Gun: Marverick");
+
+        int anoDeLancamento = 2022;
+        System.out.println("Ano de lançamento: " + anoDeLancamento);
+        boolean includioNoPlapo = true;
+        double notaDoFilme = 8.1;
+
     }
 }

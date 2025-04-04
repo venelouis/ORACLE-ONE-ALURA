@@ -25,5 +25,8 @@ public class Main {
                 
         System.out.println("Sinopse: " + sinopse);
 
+        int cassificacao = (int) (media / 2);
+        System.out.println("Classificação: " + cassificacao);
+
     }
 }

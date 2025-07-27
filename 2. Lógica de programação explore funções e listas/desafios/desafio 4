@@ -1,0 +1,30 @@
+Desafios
+Crie uma lista vazia, com o nome listaGenerica.
+Crie uma lista de linguagens de programação chamada linguagensDeProgramacao com os seguintes elementos: 'JavaScript','C','C++', 'Kotlin' e 'Python'.
+Adicione à lista linguagensDeProgramacao os seguintes elementos: 'Java', 'Ruby' e 'GoLang'.
+Crie uma lista com 3 nomes e exiba no console apenas o primeiro elemento.
+Crie uma lista com 3 nomes e exiba no console apenas o segundo elemento.
+Crie uma lista com 3 nomes e exiba no console apenas o último elemento.
+
+Entender listas em programação é fundamental, pois elas representam uma maneira eficaz de organizar e manipular conjuntos de dados relacionados. Uma lista, também conhecida como array em muitas linguagens de programação, permite armazenar múltiplos valores em uma única estrutura, o que simplifica o acesso e a gestão dos dados. A importância de compreender listas reside na capacidade de lidar com coleções de informações de maneira sistemática, permitindo que programas realizem tarefas como armazenamento, busca, ordenação e processamento de dados de forma eficiente e estruturada.
+
+Pensando nisso, criamos uma lista de atividades (não obrigatórias) focada em prática para melhorar ainda mais sua experiência de aprendizagem.
+
+Sugestões de respostas
+Crie uma lista vazia, com o nome listaGenerica.
+let listaGenerica = [];
+Crie uma lista de linguagens de programação chamada linguagensDeProgramacao.
+let linguagensDeProgramacao = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
+Adicione à lista linguagensDeProgramacao os seguintes elementos: Java, Ruby e GoLang.
+let linguagensDeProgramacao = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
+linguagensDeProgramacao.push('Java', 'Ruby', 'GoLang');
+// Lista ao final: ['JavaScript', 'C', 'C++', 'Kotlin', 'Python', 'Java', 'Ruby', 'GoLang']
+Crie uma lista com 3 nomes e exiba no console apenas o primeiro elemento.
+nomes = ['JavaScript', 'Python', 'Go'];
+console.log(nomes[0]);
+Crie uma lista com 3 nomes e exiba no console apenas o segundo elemento.
+nomes = ['JavaScript', 'Python', 'Go'];
+console.log(nomes[1]);
+Crie uma lista com 3 nomes e exiba no console apenas o último elemento.
+nomes = ['JavaScript', 'Python', 'Go'];
+console.log(nomes[2]);

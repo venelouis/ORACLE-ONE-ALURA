@@ -1,4 +1,4 @@
-# ORACLE-ONE-ALURA 2025
+# ORACLE-ONE-ALURA 2025 ok
 
 <ul>
     <li><a href="1. Logica de programacao mergulhe com JavaScript/">1. Lógica de programação: mergulhe com JavaScript</a></li>

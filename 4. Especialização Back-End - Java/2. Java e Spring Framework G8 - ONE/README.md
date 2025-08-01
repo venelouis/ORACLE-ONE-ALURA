@@ -1,9 +1,4 @@
-1. Lambdas, streams e Spring Framework
-2. Persistência de dados e consultas com Spring Data JPA
-3. Criando primeira API e conectando ao front
-4. Praticando Spring Boot - Challenge LiterAlura
-5. Spring Boot 3 API Rest
-6. Spring Framework - Challenge Fórum Hub
+# Java e Spring Framework G8 - ONE
 
 <ol>
 <li><a href="1. Lambdas, streams e Spring Framework">Lambdas, streams e Spring Framework</a></li>
